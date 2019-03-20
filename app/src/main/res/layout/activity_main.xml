@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBlue"
+    android:background="@color/colorBackground"
     tools:context=".Activities.MainActivity">
 
     <LinearLayout
@@ -56,42 +56,91 @@
             android:layout_height="match_parent">
 
             <ImageView
-                android:src="@drawable/target"
-                android:id="@+id/target_one"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:src="@drawable/background_building"
+                android:scaleType="fitXY"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
             <ImageView
-                android:id="@+id/target_two"
+                android:id="@+id/cloud_0"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="end"
+                android:src="@drawable/cloud_0"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/target" />
+                android:layout_height="wrap_content" />
 
             <ImageView
-                android:id="@+id/target_three"
+                android:id="@+id/cloud_1"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/cloud_1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/target" />
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/cloud_2"
+                android:src="@drawable/cloud_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/cloud_3"
+                android:layout_gravity="start|center"
+                android:src="@drawable/cloud_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/cloud_4"
+                android:layout_gravity="center"
+                android:src="@drawable/cloud_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/cloud_5"
+                android:src="@drawable/cloud_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
             <ImageView
                 android:src="@drawable/bird_0"
                 android:id="@+id/player"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center|left" />
+                android:layout_gravity="center|start" />
+
+            <ImageView
+                android:visibility="gone"
+                android:src="@drawable/target_2"
+                android:id="@+id/target_one"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/target_two"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/target_1" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/target_three"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/target_0"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/bdsh"
+                android:src="@drawable/bdsh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
         </FrameLayout>
 
     </LinearLayout>
-
-
-    <TextView
-        android:id="@+id/tap_to_start"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="@string/tap_to_start"
-        android:textColor="@android:color/black"
-        android:textSize="52sp" />
 
 </RelativeLayout>

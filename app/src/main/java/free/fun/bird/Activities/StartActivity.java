@@ -14,11 +14,8 @@ public class StartActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
 
-        findViewById(R.id.start_button).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(StartActivity.this, MainActivity.class));
-            }
-        });
+        findViewById(R.id.start_button).setOnClickListener(v ->
+                startActivity(new Intent(StartActivity.this, MainActivity.class))
+        );
     }
 }
